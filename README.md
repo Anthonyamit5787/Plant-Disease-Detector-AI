@@ -10,6 +10,7 @@ An end-to-end Computer Vision solution for automated agricultural health monitor
 ## 🚀 Live Interactive Demo
 Experience the model in real-time. Upload a leaf image to see a side-by-side comparison of our two primary architectures:
 👉 **[Launch Hugging Face Space](https://huggingface.co/spaces/Anthony5787/Plant-Disease-Diagnostic-Suite)**
+<img width="1917" height="822" alt="Screenshot 2026-03-31 020232" src="https://github.com/user-attachments/assets/ebc0f392-1a7b-4c80-a47a-0037a498cb74" />
 
 ---
 
@@ -18,7 +19,7 @@ To ensure the models are learning biological features (like lesions and mold) ra
 
 | Original Leaf | ResNet18 Attention | EfficientNet-B0 Attention |
 | :---: | :---: | :---: |
-|[<img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/724f016b-085a-4ccb-82b5-d33b242283c1" />] | ![<img width="389" height="411" alt="image" src="https://github.com/user-attachments/assets/eeed36c3-2ca3-4884-9dc7-59dddff2832d" />] | [<img width="389" height="411" alt="image" src="https://github.com/user-attachments/assets/cbc4169f-cd42-4883-9fa1-818c11633b8d" />] |
+|<img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/724f016b-085a-4ccb-82b5-d33b242283c1" /> | <img width="389" height="411" alt="image" src="https://github.com/user-attachments/assets/eeed36c3-2ca3-4884-9dc7-59dddff2832d" /> | <img width="389" height="411" alt="image" src="https://github.com/user-attachments/assets/cbc4169f-cd42-4883-9fa1-818c11633b8d" /> |
 
 * **Insight:** The heatmaps confirm that both models correctly localize their "attention" on the symptomatic areas of the leaf, proving the robustness of the 99.8% accuracy.
 
