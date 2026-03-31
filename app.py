@@ -15,7 +15,7 @@ from PIL import Image
 import os
 
 # --- 1. CONFIGURATION ---
-# These MUST match the classes from your training notebook
+
 CLASS_NAMES = [
     'Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy',
     'Blueberry___healthy', 'Cherry_(including_sour)___Powdery_mildew', 'Cherry_(including_sour)___healthy',
@@ -34,11 +34,11 @@ CLASS_NAMES = [
 
 DEVICE = torch.device("cpu")
 
-# --- 2. MODEL LOADERS (Using exact architecture from your notebook) ---
+# --- 2. MODEL LOADERS ---
 def get_resnet():
     model = models.resnet18(weights=None)
     model.fc = nn.Linear(model.fc.in_features, 38) # Must be 38
-    # Use ./ to ensure Hugging Face finds the file in the current directory
+    # Using ./ to ensure Hugging Face finds the file in the current directory
     if os.path.exists("ResNet18_final.pth"):
         model.load_state_dict(torch.load("ResNet18_final.pth", map_location=DEVICE))
     model.eval()
@@ -60,7 +60,7 @@ effnet_model = get_effnet()
 def predict_image(img):
     if img is None: return None, None
 
-    # Matching transforms from your testing script
+    # Matching transforms from testing script
     transform = transforms.Compose([
         transforms.Resize((224, 224)),
         transforms.ToTensor(),
