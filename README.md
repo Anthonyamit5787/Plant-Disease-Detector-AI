@@ -18,7 +18,10 @@ To ensure the models are learning biological features (like lesions and mold) ra
 
 | Original Leaf | ResNet18 Attention | EfficientNet-B0 Attention |
 | :---: | :---: | :---: |
-| ![Original] | ![ResNet_Heatmap] | ![EffNet_Heatmap] |
+| ![<img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/724f016b-085a-4ccb-82b5-d33b242283c1" />
+] | ![<img width="389" height="411" alt="image" src="https://github.com/user-attachments/assets/eeed36c3-2ca3-4884-9dc7-59dddff2832d" />
+] | ![<img width="389" height="411" alt="image" src="https://github.com/user-attachments/assets/cbc4169f-cd42-4883-9fa1-818c11633b8d" />
+] |
 
 * **Insight:** The heatmaps confirm that both models correctly localize their "attention" on the symptomatic areas of the leaf, proving the robustness of the 99.8% accuracy.
 
