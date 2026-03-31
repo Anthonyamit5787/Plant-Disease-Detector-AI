@@ -26,7 +26,11 @@ To ensure the models are learning biological features (like lesions and mold) ra
 ---
 
 ## 📊 Dataset & Methodology
-* **Dataset:** [New Plant Diseases Dataset](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset) (87,000+ images).
+This project is built upon the **New Plant Diseases Dataset**, one of the most comprehensive agricultural computer vision datasets available.
+* **Dataset:** [New Plant Diseases Dataset](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset) 
+* **Total Images:** 87,000+ 
+* **Total Classes:** 38 (covering 14 unique crop species)
+* **Challenge:** Managing 87k images required significant optimization in data loading and augmentation to ensure the model generalized well across diverse lighting and environmental conditions.
 * **Architectures:** Benchmarked **ResNet18** vs. **EfficientNet-B0**.
 * **Weights:** Model weights are hosted on Hugging Face due to LFS size constraints.
 
