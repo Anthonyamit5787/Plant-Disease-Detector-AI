@@ -1,4 +1,9 @@
 torch
 torchvision
+timm==0.9.12
 gradio
+numpy
+opencv-python-headless
 pillow
+grad-cam
+matplotlib
