@@ -70,7 +70,7 @@ Based on my final testing results across the three architectures:
 
 ### **Connect with me**
 **Developer:** Anthony Amit Biswas  
-**LinkedIn:** [Connect on LinkedIn](https://www.linkedin.com/in/YOUR_LINKEDIN_ID)  
+**LinkedIn:** [Connect on LinkedIn](https://www.linkedin.com/in/anthony-amit-5617702ba/))  
 **Project Hub:** [Hugging Face Profile](https://huggingface.co/Anthony5787)
 
 ***
