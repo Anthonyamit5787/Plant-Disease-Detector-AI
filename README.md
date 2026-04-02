@@ -15,11 +15,8 @@ An advanced Computer Vision suite for automated agricultural health monitoring. 
 Experience the multi-architecture diagnostic engine in real-time. Upload a leaf image to see how three different "AI brains" interpret the specimen:
 👉 **[Launch Hugging Face Space v2.0](https://huggingface.co/spaces/Anthony5787/Plant-Disease-Diagnostic-Suite-2.0)**
 
-<p align="center">
-  <img src="[https://github.com/user-attachments/assets/e05ae507-1afa-49a9-b382-f04303ce5979](https://github.com/user-attachments/assets/e05ae507-1afa-49a9-b382-f04303ce5979)" width="100%" alt="Main Dashboard Preview">
-  <br>
-  <i><b>The Production Dashboard:</b> Real-time identification of plant species, disease classification, and health status.</i>
-</p>
+<img width="1901" height="818" alt="main dashboard" src="https://github.com/user-attachments/assets/4cc06fd4-b905-4392-b886-4594fb9b030b" />
+
 
 ---
 
@@ -33,11 +30,8 @@ To move beyond "Black Box" AI, I implemented **Grad-CAM (Gradient-weighted Class
 | **EfficientNet-B0** | Optimized CNN | Scaled Features | Balanced depth and width for efficient extraction. |
 | **ViT-B/16** | **Transformer** | **Global Attention** | Evaluates long-range dependencies across the leaf. |
 
-<p align="center">
-  <img src="[https://github.com/user-attachments/assets/ae765ef9-0557-47e5-a055-a04458645e04](https://github.com/user-attachments/assets/ae765ef9-0557-47e5-a055-a04458645e04)" width="100%" alt="Triple Heatmap Comparison">
-  <br>
-  <i><b>Visualizing the "Why":</b> Side-by-side comparison of attention maps. Note how the Transformer (Right) evaluates the global context of the leaf structure compared to the localized focus of the CNNs.</i>
-</p>
+<img width="2184" height="837" alt="3 in 1" src="https://github.com/user-attachments/assets/287984b5-0da4-4fac-9a81-d8a57fb106ec" />
+
 
 ---
 
@@ -54,9 +48,8 @@ This project is built upon the **New Plant Diseases Dataset**, optimized for rea
 | **EfficientNet-B0** | 99.82% | 0.998 | ~5.3M |
 | **ResNet18** | 99.58% | 0.996 | ~11.7M |
 
-<p align="center">
-  <img src="[https://github.com/user-attachments/assets/d8994216-197a-4183-a351-b31ad49cbd2b](https://github.com/user-attachments/assets/d8994216-197a-4183-a351-b31ad49cbd2b)" width="80%" alt="Performance Results">
-</p>
+<img width="1396" height="783" alt="comparison" src="https://github.com/user-attachments/assets/f6511182-d9ab-4a55-868e-92a6c4dbdf9a" />
+
 
 ---
 
