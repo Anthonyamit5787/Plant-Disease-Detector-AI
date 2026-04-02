@@ -41,12 +41,16 @@ This project is built upon the **New Plant Diseases Dataset**, optimized for rea
 * **Diversity:** 38 classes across 14 unique species (Apple, Corn, Grape, Orange, Tomato, etc.).
 * **Data Engineering:** Handling 87k images required significant optimization in data pipelines and heavy augmentation (rotation, shearing, color jitter) to ensure the model generalizes across diverse lighting and environmental conditions.
 
-### **Performance Benchmarks**
-| Model | Accuracy | F1-Score | Parameter Count |
-| :--- | :---: | :---: | :--- |
-| **ViT-B/16 (v2.0)** | **99.85%** | **0.999** | ~86M |
-| **EfficientNet-B0** | 99.82% | 0.998 | ~5.3M |
-| **ResNet18** | 99.58% | 0.996 | ~11.7M |
+### **Architectural Comparison Matrix**
+Based on my final testing results across the three architectures:
+
+| Metric | ResNet18 | EfficientNet-B0 | ViT-B/16 |
+| :--- | :---: | :---: | :---: |
+| **Validation Acc.** | 96.80% | **99.79%** | 91.10% |
+| **Test Accuracy** | 96.50% | **99.81%** | 91.05% |
+| **Inference Latency**| 11.20 ms | 7.80 ms | **3.57 ms** |
+| **Total Parameters** | 11.7 Million | 5.3 Million | 86.4 Million |
+| **Key Strength** | Reliable Baseline | Feature Extraction | Parallel Speed |
 
 <img width="1396" height="783" alt="comparison" src="https://github.com/user-attachments/assets/f6511182-d9ab-4a55-868e-92a6c4dbdf9a" />
 
