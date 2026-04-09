@@ -17,7 +17,6 @@ Experience the multi-architecture diagnostic engine in real-time. Upload a leaf 
 
 <img width="1901" height="818" alt="main dashboard" src="https://github.com/user-attachments/assets/4cc06fd4-b905-4392-b886-4594fb9b030b" />
 
-<img width="932" height="339" alt="image" src="https://github.com/user-attachments/assets/640a6f5c-78f4-430d-bf29-072c256a932d" />
 
 
 ---
