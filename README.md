@@ -5,6 +5,10 @@
 ![PyTorch](https://img.shields.io/badge/Framework-PyTorch-EE4C2C?logo=pytorch)
 ![Transformers](https://img.shields.io/badge/Architecture-Vision_Transformers-blueviolet)
 
+An end-to-end deep learning system that detects plant diseases from leaf images using CNNs and Vision Transformers.  
+Achieves up to **99.81% accuracy** and is deployed as a real-time web application with explainable AI (Grad-CAM).
+
+Designed to bridge the gap between controlled datasets and real-world agricultural conditions.
 ---
 
 ## 📌 Overview
@@ -95,7 +99,8 @@ pip install -r requirements.txt
 ```
 ---
 
-▶️ Usage
+## ▶️ Usage
+
 ```bash
 python app.py
 ```
@@ -107,7 +112,8 @@ Then:
 
 ---
 
-📂 Repository Structure
+## 📂 Repository Structure
+
 ```bash
 ├── app.py                 # Web app (Gradio)
 ├── training_v2.ipynb      # Model training
@@ -118,21 +124,24 @@ Then:
 
 ---
 
-⚠️ Limitations
+## ⚠️ Limitations
+
 - Performance may drop on real-world images (domain shift)
 - Similar diseases can be confused
 - ViT requires larger datasets for optimal performance
 
 ---
 
-🔮 Future Work
+🔮 **Future Work**
+
 - Improve robustness with more diverse data
 - Explore hybrid CNN + Transformer models
 - Deploy on mobile / edge devices
 
 ---
 
-🌍 Impact
+## 🌍 Impact
+
 This system can support:
 - Early disease detection
 - Reduced crop loss
@@ -140,7 +149,8 @@ This system can support:
 
 ---
 
-🤝 Connect
+## 🤝 Connect
+
 Anthony Amit Biswas
 🔗 https://www.linkedin.com/in/anthony-amit-5617702ba/
 🤗 https://huggingface.co/Anthony5787
