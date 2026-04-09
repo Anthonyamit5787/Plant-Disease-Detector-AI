@@ -5,85 +5,84 @@
 ![PyTorch](https://img.shields.io/badge/Framework-PyTorch-EE4C2C?logo=pytorch)
 ![Transformers](https://img.shields.io/badge/Architecture-Vision_Transformers-blueviolet)
 
-### **Bridging Agricultural Expertise with Explainable Deep Learning**
+---
 
-An advanced Computer Vision system for automated plant disease detection. This project classifies **38 plant diseases across 14 crop species** with a peak performance of **99.81% test accuracy** using EfficientNet-B0.
+## 📌 Overview
 
-**Version 2.0 Update:** Integration of **Vision Transformers (ViT)** enables comparison between convolutional feature extraction and global self-attention. A multi-model “consensus system” improves reliability by analysing predictions from three distinct architectures.
+This project presents a deep learning-based system for detecting **38 plant diseases across 14 crop species** using leaf images.
+
+It compares three architectures:
+- ResNet18  
+- EfficientNet-B0  
+- Vision Transformer (ViT-B/16)  
+
+👉 Best performance achieved: **99.81% accuracy (EfficientNet-B0)**  
+
+The system also includes:
+- Explainable AI (Grad-CAM)  
+- Real-world testing  
+- Live deployment  
 
 ---
 
-## 🚀 Live Interactive Demo
+## 🚀 Live Demo
 
-Experience real-time plant disease diagnosis:
+👉 https://huggingface.co/spaces/Anthony5787/Plant-Disease-Diagnostic-Suite-2.0  
 
-👉 **[Launch Hugging Face Space v2.0](https://huggingface.co/spaces/Anthony5787/Plant-Disease-Diagnostic-Suite-2.0)**
-
-<img width="1901" height="818" alt="main dashboard" src="https://github.com/user-attachments/assets/4cc06fd4-b905-4392-b886-4594fb9b030b" />
+<img width="1901" height="818" alt="dashboard" src="https://github.com/user-attachments/assets/4cc06fd4-b905-4392-b886-4594fb9b030b" />
 
 ---
 
 ## ✨ Key Features
 
-- 🌿 Multi-model architecture (ResNet18, EfficientNet-B0, ViT-B/16)
+- 🌿 Multi-model comparison (CNN vs Transformer)
 - 📊 High accuracy classification (up to **99.81%**)
-- ⚡ Real-time prediction via Hugging Face deployment
-- 🔍 Explainable AI using Grad-CAM
-- 🌍 Robustness testing on real-world images
-- 🧠 Comparative analysis of CNN vs Transformer models
+- ⚡ Real-time inference (Hugging Face)
+- 🔍 Grad-CAM visual explanations
+- 🌍 Tested on real-world images
+- 🧠 Detailed evaluation (F1, confusion matrix)
 
 ---
 
-## 🔬 Explainable AI (Grad-CAM)
+## 🧠 Models Used
 
-To enhance interpretability, **Grad-CAM (Gradient-weighted Class Activation Mapping)** is used to visualise model attention.
-
-This ensures the model focuses on biologically relevant features such as:
-- lesions  
-- discoloration  
-- fungal patterns  
-
-<img width="2184" height="837" alt="gradcam" src="https://github.com/user-attachments/assets/287984b5-0da4-4fac-9a81-d8a57fb106ec" />
-
----
-
-## 🧠 Multi-Architecture Comparison
-
-| Model | Type | Key Strength |
-|------|------|-------------|
-| **ResNet18** | Residual CNN | Strong baseline, captures local textures |
-| **EfficientNet-B0** | Optimized CNN | Best accuracy and efficiency |
-| **ViT-B/16** | Transformer | Captures global dependencies |
+| Model | Type | Strength |
+|------|------|----------|
+| ResNet18 | CNN | Strong baseline |
+| EfficientNet-B0 | CNN | Best accuracy & efficiency |
+| ViT-B/16 | Transformer | Global attention |
 
 ---
 
 ## 📊 Results
 
-| Metric | ResNet18 | EfficientNet-B0 | ViT-B/16 |
-| :--- | :---: | :---: | :---: |
-| **Validation Accuracy** | 96.80% | **99.79%** | 91.10% |
-| **Test Accuracy** | 96.50% | **99.81%** | 91.05% |
-| **Inference Latency** | 11.20 ms | 7.80 ms | **3.57 ms** |
-| **Parameters** | 11.7M | 5.3M | 86.4M |
+| Model | Accuracy |
+|------|--------|
+| ResNet18 | 96.50% |
+| EfficientNet-B0 | **99.81%** |
+| ViT-B/16 | 91.05% |
 
 <img width="1396" height="783" alt="comparison" src="https://github.com/user-attachments/assets/f6511182-d9ab-4a55-868e-92a6c4dbdf9a" />
 
 ---
 
+## 🔬 Explainable AI (Grad-CAM)
+
+Grad-CAM is used to visualize model attention, ensuring predictions are based on **disease regions rather than background noise**.
+
+<img width="2184" height="837" alt="gradcam" src="https://github.com/user-attachments/assets/287984b5-0da4-4fac-9a81-d8a57fb106ec" />
+
+---
+
 ## 📦 Dataset
 
-- **Dataset:** New Plant Diseases Dataset (Kaggle)  
+- **Source:** New Plant Diseases Dataset (Kaggle)  
 - **Size:** 87,000+ images  
-- **Classes:** 38 disease categories  
-- **Crops:** 14 species  
-
-### Data Processing:
-- Image resizing (224×224)  
-- Normalization (ImageNet standards)  
-- Data augmentation:
-  - Rotation  
-  - Horizontal flipping  
-  - Color jitter  
+- **Classes:** 38  
+- **Preprocessing:**
+  - Resize (224×224)  
+  - Normalization  
+  - Augmentation (flip, rotation, color jitter)
 
 ---
 
@@ -92,5 +91,47 @@ This ensures the model focuses on biologically relevant features such as:
 ```bash
 git clone https://github.com/Anthonyamit5787/Plant-Disease-Detector-AI
 cd Plant-Disease-Detector-AI
+pip install -r requirements.txt 
+```
 
-pip install -r requirements.txt
+▶️ Usage
+```bash
+python app.py
+```
+Then:
+
+- Upload a leaf image
+- Get prediction + confidence
+- Compare model outputs
+
+
+📂 Repository Structure
+```bash
+├── app.py                 # Web app (Gradio)
+├── training_v2.ipynb      # Model training
+├── testing.ipynb          # Evaluation + Grad-CAM
+├── requirements.txt       # Dependencies
+```
+
+⚠️ Model weights are hosted on Hugging Face due to size limits.
+
+⚠️ Limitations
+- Performance may drop on real-world images (domain shift)
+- Similar diseases can be confused
+- ViT requires larger datasets for optimal performance
+
+🔮 Future Work
+- Improve robustness with more diverse data
+- Explore hybrid CNN + Transformer models
+- Deploy on mobile / edge devices
+
+🌍 Impact
+This system can support:
+- Early disease detection
+- Reduced crop loss
+- Smart agriculture solutions
+
+🤝 Connect
+Anthony Amit Biswas
+🔗 https://www.linkedin.com/in/anthony-amit-5617702ba/
+🤗 https://huggingface.co/Anthony5787
