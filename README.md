@@ -23,6 +23,9 @@ Experience the multi-architecture diagnostic engine in real-time. Upload a leaf 
 ## 🔬 Explainable AI (XAI): Grad-CAM Visualization
 To move beyond "Black Box" AI, I implemented **Grad-CAM (Gradient-weighted Class Activation Mapping)**. This validates that the models are focusing on biological symptoms (lesions, mold, necrosis) rather than background noise.
 
+<img width="2184" height="837" alt="3 in 1" src="https://github.com/user-attachments/assets/287984b5-0da4-4fac-9a81-d8a57fb106ec" />
+
+
 ### **The Multi-Architecture Consensus**
 | Architecture | Type | XAI Focus | Logic |
 | :--- | :--- | :--- | :--- |
@@ -41,9 +44,6 @@ To move beyond "Black Box" AI, I implemented **Grad-CAM (Gradient-weighted Class
 | **ViT-B/16** | **Transformer** | **Global Attention** | Evaluates long-range dependencies across the leaf. |
 
 <img width="854" height="344" alt="image" src="https://github.com/user-attachments/assets/42316698-a1b8-437e-8ec6-c46f01ce722c" />
-
-
-<img width="2184" height="837" alt="3 in 1" src="https://github.com/user-attachments/assets/287984b5-0da4-4fac-9a81-d8a57fb106ec" />
 
 
 ---
