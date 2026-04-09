@@ -83,7 +83,19 @@ Grad-CAM is used to visualize model attention, ensuring predictions are based on
 
 ## 📦 Dataset
 
-- **Source:** New Plant Diseases Dataset (Kaggle)  
+This project uses the **New Plant Diseases Dataset (Kaggle)**.
+
+👉 https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset
+
+### Instructions:
+1. Download the dataset from Kaggle  
+2. Extract it  
+3. Update the dataset path in the code:
+
+```bash
+data_path = "your_local_dataset_path"
+```
+### Dataset Contains
 - **Size:** 87,000+ images  
 - **Classes:** 38  
 - **Crops:** 14 species  
@@ -124,8 +136,10 @@ Then:
 ├── training_v2.ipynb      # Model training
 ├── testing.ipynb          # Evaluation + Grad-CAM
 ├── requirements.txt       # Dependencies
+├── README.md              # includes dataset link
 ```
 ⚠️ Model weights are hosted on Hugging Face due to size limits.
+⚠️ Dataset is not included due to size limitations.
 
 ---
 
