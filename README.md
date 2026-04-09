@@ -93,6 +93,7 @@ git clone https://github.com/Anthonyamit5787/Plant-Disease-Detector-AI
 cd Plant-Disease-Detector-AI
 pip install -r requirements.txt 
 ```
+---
 
 ▶️ Usage
 ```bash
@@ -104,6 +105,7 @@ Then:
 - Get prediction + confidence
 - Compare model outputs
 
+---
 
 📂 Repository Structure
 ```bash
@@ -114,22 +116,29 @@ Then:
 ```
 ⚠️ Model weights are hosted on Hugging Face due to size limits.
 
+---
 
 ⚠️ Limitations
 - Performance may drop on real-world images (domain shift)
 - Similar diseases can be confused
 - ViT requires larger datasets for optimal performance
 
+---
+
 🔮 Future Work
 - Improve robustness with more diverse data
 - Explore hybrid CNN + Transformer models
 - Deploy on mobile / edge devices
+
+---
 
 🌍 Impact
 This system can support:
 - Early disease detection
 - Reduced crop loss
 - Smart agriculture solutions
+
+---
 
 🤝 Connect
 Anthony Amit Biswas
