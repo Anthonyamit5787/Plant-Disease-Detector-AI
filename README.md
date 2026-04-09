@@ -1,4 +1,7 @@
-# 🌿 PlantPath AI: Diagnostic Engine v2.0
+# 🌱 Plant Disease Detection using Deep Learning
+
+An AI-powered system that detects plant diseases from leaf images using ResNet, EfficientNet, and Vision Transformer models. The system achieves 99.81% accuracy and is deployed as a real-time web application using Hugging Face Spaces.
+
 ![Status](https://img.shields.io/badge/Status-v2.0_Live-green)
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![PyTorch](https://img.shields.io/badge/Framework-PyTorch-EE4C2C?logo=pytorch)
@@ -8,6 +11,7 @@
 An advanced Computer Vision suite for automated agricultural health monitoring. This project identifies **38 distinct plant diseases** across 14 crop species with a record-breaking **99.85% accuracy**. 
 
 **Version 2.0 Update:** I have integrated **Vision Transformers (ViT)** to benchmark global self-attention mechanisms against traditional Convolutional Neural Networks (CNNs). This "Triple-Check" system ensures diagnostic reliability by seeking consensus across three distinct neural architectures.
+
 
 ---
 
