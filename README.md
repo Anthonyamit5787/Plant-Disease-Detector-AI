@@ -9,6 +9,7 @@ An end-to-end deep learning system that detects plant diseases from leaf images 
 Achieves up to **99.81% accuracy** and is deployed as a real-time web application with explainable AI (Grad-CAM).
 
 Designed to bridge the gap between controlled datasets and real-world agricultural conditions.
+
 ---
 
 ## 📌 Overview
