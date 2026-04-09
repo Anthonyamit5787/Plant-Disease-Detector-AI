@@ -30,10 +30,14 @@ To move beyond "Black Box" AI, I implemented **Grad-CAM (Gradient-weighted Class
 
 <img width="844" height="239" alt="image" src="https://github.com/user-attachments/assets/3c89aa07-f911-46ec-be05-5370146800a0" />
 
+| Architecture | Type | XAI Focus | Logic |
+| :--- | :--- | :--- | :--- |
 | **EfficientNet-B0** | Optimized CNN | Scaled Features | Balanced depth and width for efficient extraction. |
 
 <img width="835" height="191" alt="image" src="https://github.com/user-attachments/assets/4e08cccc-b0a0-4726-8bc7-410b1caf365e" />
 
+| Architecture | Type | XAI Focus | Logic |
+| :--- | :--- | :--- | :--- |
 | **ViT-B/16** | **Transformer** | **Global Attention** | Evaluates long-range dependencies across the leaf. |
 
 <img width="854" height="344" alt="image" src="https://github.com/user-attachments/assets/42316698-a1b8-437e-8ec6-c46f01ce722c" />
