@@ -112,8 +112,8 @@ Then:
 ├── testing.ipynb          # Evaluation + Grad-CAM
 ├── requirements.txt       # Dependencies
 ```
-
 ⚠️ Model weights are hosted on Hugging Face due to size limits.
+
 
 ⚠️ Limitations
 - Performance may drop on real-world images (domain shift)
