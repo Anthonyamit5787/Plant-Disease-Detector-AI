@@ -26,9 +26,12 @@ To move beyond "Black Box" AI, I implemented **Grad-CAM (Gradient-weighted Class
 ### **The Multi-Architecture Consensus**
 | Architecture | Type | XAI Focus | Logic |
 | :--- | :--- | :--- | :--- |
-| **ResNet18** | Residual CNN | Local Textures | Focuses on sharp edges and pixel gradients. |
-| **EfficientNet-B0** | Optimized CNN | Scaled Features | Balanced depth and width for efficient extraction. |
-| **ViT-B/16** | **Transformer** | **Global Attention** | Evaluates long-range dependencies across the leaf. |
+| **ResNet18** | Residual CNN | Local Textures | Focuses on sharp edges and pixel gradients. |<img width="844" height="239" alt="image" src="https://github.com/user-attachments/assets/3c89aa07-f911-46ec-be05-5370146800a0" />|
+
+| **EfficientNet-B0** | Optimized CNN | Scaled Features | Balanced depth and width for efficient extraction. |<img width="835" height="191" alt="image" src="https://github.com/user-attachments/assets/4e08cccc-b0a0-4726-8bc7-410b1caf365e" />
+|
+| **ViT-B/16** | **Transformer** | **Global Attention** | Evaluates long-range dependencies across the leaf. |<img width="854" height="344" alt="image" src="https://github.com/user-attachments/assets/42316698-a1b8-437e-8ec6-c46f01ce722c" />
+|
 
 <img width="2184" height="837" alt="3 in 1" src="https://github.com/user-attachments/assets/287984b5-0da4-4fac-9a81-d8a57fb106ec" />
 
