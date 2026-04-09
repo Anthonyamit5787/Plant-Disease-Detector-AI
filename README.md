@@ -5,6 +5,10 @@
 ![PyTorch](https://img.shields.io/badge/Framework-PyTorch-EE4C2C?logo=pytorch)
 ![Transformers](https://img.shields.io/badge/Architecture-Vision_Transformers-blueviolet)
 
+---
+
+### 🌿 AI-Powered Plant Disease Diagnosis
+
 An end-to-end deep learning system that detects plant diseases from leaf images using CNNs and Vision Transformers.  
 Achieves up to **99.81% accuracy** and is deployed as a real-time web application with explainable AI (Grad-CAM).
 
@@ -14,19 +18,17 @@ Designed to bridge the gap between controlled datasets and real-world agricultur
 
 ## 📌 Overview
 
-This project presents a deep learning-based system for detecting **38 plant diseases across 14 crop species** using leaf images.
+This project classifies **38 plant diseases across 14 crop species** using multiple deep learning architectures:
 
-It compares three architectures:
 - ResNet18  
 - EfficientNet-B0  
 - Vision Transformer (ViT-B/16)  
 
-👉 Best performance achieved: **99.81% accuracy (EfficientNet-B0)**  
-
-The system also includes:
-- Explainable AI (Grad-CAM)  
+It focuses on:
+- Model comparison  
+- Explainability  
 - Real-world testing  
-- Live deployment  
+- Deployment  
 
 ---
 
@@ -41,11 +43,11 @@ The system also includes:
 ## ✨ Key Features
 
 - 🌿 Multi-model comparison (CNN vs Transformer)
-- 📊 High accuracy classification (up to **99.81%**)
-- ⚡ Real-time inference (Hugging Face)
+- 📊 High accuracy classification (**99.81%**)
+- ⚡ Real-time prediction via web app
 - 🔍 Grad-CAM visual explanations
-- 🌍 Tested on real-world images
-- 🧠 Detailed evaluation (F1, confusion matrix)
+- 🌍 Real-world testing (domain shift analysis)
+- 🧠 Advanced evaluation (F1-score, confusion matrix)
 
 ---
 
@@ -55,7 +57,7 @@ The system also includes:
 |------|------|----------|
 | ResNet18 | CNN | Strong baseline |
 | EfficientNet-B0 | CNN | Best accuracy & efficiency |
-| ViT-B/16 | Transformer | Global attention |
+| ViT-B/16 | Transformer | Captures global dependencies |
 
 ---
 
@@ -73,7 +75,7 @@ The system also includes:
 
 ## 🔬 Explainable AI (Grad-CAM)
 
-Grad-CAM is used to visualize model attention, ensuring predictions are based on **disease regions rather than background noise**.
+Grad-CAM is used to visualize model attention, ensuring predictions are based on **actual disease regions** rather than background noise.
 
 <img width="2184" height="837" alt="gradcam" src="https://github.com/user-attachments/assets/287984b5-0da4-4fac-9a81-d8a57fb106ec" />
 
@@ -84,10 +86,12 @@ Grad-CAM is used to visualize model attention, ensuring predictions are based on
 - **Source:** New Plant Diseases Dataset (Kaggle)  
 - **Size:** 87,000+ images  
 - **Classes:** 38  
-- **Preprocessing:**
-  - Resize (224×224)  
-  - Normalization  
-  - Augmentation (flip, rotation, color jitter)
+- **Crops:** 14 species  
+
+### Preprocessing:
+- Resize (224×224)  
+- Normalization (ImageNet)  
+- Augmentation (flip, rotation, color jitter)  
 
 ---
 
@@ -96,7 +100,7 @@ Grad-CAM is used to visualize model attention, ensuring predictions are based on
 ```bash
 git clone https://github.com/Anthonyamit5787/Plant-Disease-Detector-AI
 cd Plant-Disease-Detector-AI
-pip install -r requirements.txt 
+pip install -r requirements.txt
 ```
 ---
 
